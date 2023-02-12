@@ -1,0 +1,18 @@
+﻿<Window x:Class="krestiki_noliki.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:krestiki_noliki"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="Intro" HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Center" Height="89" Width="800" FontFamily="Arial Black" FontSize="20" TextAlignment="Center" Text="Добро пожаловать, это крестики-нолики(нажмите на кнопку начать, для того чтобы начать)" Grid.Row="0"/>
+        <Button x:Name="Start" Content="Стартуем)(станете молнией маквином)" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="97" Width="420" Background="#FFE90B0B" Foreground="#FFDFCB0D" FontFamily="Arial Black" FontSize="16" Click="Start_Click" Grid.Row="1"/>
+        <Frame x:Name="PageFrame" Grid.RowSpan="2"/>
+    </Grid>
+</Window>

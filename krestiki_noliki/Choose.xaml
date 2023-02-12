@@ -1,0 +1,25 @@
+﻿<Page x:Class="krestiki_noliki.Choose"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:krestiki_noliki"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Background="White"
+      Title="Choose">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="Choose_Text" Text="Выберите за кого вы играете" FontFamily="Arial Black" FontSize="20" VerticalAlignment="Center"/>
+        <RadioButton x:Name="Krestiki" Click="AllRadio" Content="Крестики" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Height="40" Width="451" FontFamily="Arial Black" FontSize="18"/>
+        <RadioButton x:Name="Noliki" Click ="AllRadio" Content="Нолики"  HorizontalAlignment="Center"  Grid.Row="2"  VerticalAlignment="Top" Height="40" Width="451" FontFamily="Arial Black" FontSize="18"/>
+        <Button x:Name="Chooser" Click="Chooser_Click" Content="Играть)" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="65" Margin="0,105,0,0" Width="630" FontFamily="Arial Black" FontSize="16" Background="#FFE50909" />
+        <Frame x:Name="PageFrame" Grid.RowSpan="3" />
+    </Grid>
+</Page>
